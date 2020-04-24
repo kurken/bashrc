@@ -5,4 +5,4 @@ alias c='clear'                             # Очистить экран
 alias eb='exec bash'                        # Перезагрузка терминала
 alias vb='vim ~/.bashrc'                    # Редактирование bashrc
 
-alias gg='git add $1; git commit -m "$2"; git push;'
+alias gg='git add '*'; git commit -m "$1"; git push;'
