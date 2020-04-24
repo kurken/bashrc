@@ -4,3 +4,5 @@ alias auu='apt update && apt upgrade -y'    # Обновление пакето�
 alias c='clear'                             # Очистить экран
 alias eb='exec bash'                        # Перезагрузка терминала
 alias vb='vim ~/.bashrc'                    # Редактирование bashrc
+
+alias gg='git add $1; git commit -m "$2"; git push;'
