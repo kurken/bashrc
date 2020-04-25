@@ -1,6 +1,7 @@
 #!/bin/bash
+
 if [ -e ~/src/bashrc/.bashrc3 ]; then 
-        echo "ok"; 
+        echo "ok" 
 else 
         mkdir -p ~/src 
         cd ~/src 
