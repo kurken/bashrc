@@ -1,4 +1,5 @@
 alias ai='apt install $1'                   # Установка программы
+alias aiz='apt install $*'                   # Установка программ
 alias as='apt search $1'                    # Поиск программы
 alias auu='apt update && apt upgrade -y'    # Обновление пакетов
 alias c='clear'                             # Очистить экран
