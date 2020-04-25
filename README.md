@@ -12,7 +12,9 @@
 
 
 `{ echo "source ~/.bashrc.orig"; echo "source ~/src/bashrc/.bashrc"; } > ~/.bashrc; source ~/.bashrc`
+
 или так
+
 `echo -e "source ~/.bashrc.orig\nsource ~/src/bashrc/.bashrc" > ~/.bashrc; source ~/.bashrc`
 
 
