@@ -10,5 +10,8 @@ alias gc='mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${1}.git
 alias gp='git pull'                         # Синхронизация локального репо с удаленнным
 alias gpb='cd ~/src/bashrc; git pull; source ~/.bashrc' # Синхронизация локального репо bashrc с удаленным
 
+alias lg='ls -alFt | grep ^$1'               # Список файлов, включая скрытые(-a)+ подробно(-l) + / (-F)
+                                             # + сортировка по времени(-t). Фильтр grep по началу названия.
+
 # Система
 alias sd='lsblk; df -h; fdisk -l;'          # Информация о дисках и файловой системе
