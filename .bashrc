@@ -7,5 +7,5 @@ alias vb='vim ~/.bashrc'                    # Редактирование bashr
 
 alias gg='git add '*'; git commit -m "gg-quick"; git push' # Сохранение локальных изменений репо на GitHub 
 alias gc='mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${1}.git' # Клоирование моих репо
-alias gp='git pull'                         # Синхронизация локального с удаленнным
+alias gp='git pull'                         # Синхронизация локального репо с удаленнным
 alias gpb='cd ~/src/bashrc; git pull; source ~/.bashrc'       # Синхронизация локального репо bashrc с удаленным
