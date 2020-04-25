@@ -8,7 +8,7 @@
 
 `cp -n ~/.bashrc ~/.bashrc.orig`
 
-3. Создаем ~/.bashrc и вставляем ссылки на ~/src/bashrc/.bashrc и ~/.bashrc.orig
+3. Создаем ~/.bashrc и вставляем ссылки на ~/src/bashrc/.bashrc и ~/.bashrc.orig. Обновляем конфигурацию bash
 
 
 `{ echo "source ~/.bashrc.orig"; echo "source ~/src/bashrc/.bashrc"; } > ~/.bashrc; source ~/.bashrc`
