@@ -1,11 +1,13 @@
+Установка одной строкой:
+
 `if [ -e ~/src/bashrc/.bashrc ]; then echo "ok"; else mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git; fi; cp -n ~/.bashrc ~/.bashrc.orig; echo -e "source ~/.bashrc.orig\nsource ~/src/bashrc/.bashrc" > ~/.bashrc; source ~/.bashrc`
 
 
-Ручная установка:
+Пошаговая установка:
 
-1. Клонируем репо
+1. Если репа уже загружена, пропускаем. Иначе, создаем директорию и клонируем репу:
 
-`mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git`
+`if [ -e ~/src/bashrc/.bashrc ]; then echo "ok"; else mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git`
 
 2. Копируем оригинал .bashrc в .bashrc.orig(если он не существует)
 
@@ -13,6 +15,7 @@
 
 3. Создаем ~/.bashrc и вставляем ссылки на ~/src/bashrc/.bashrc и ~/.bashrc.orig. Обновляем конфигурацию bash
 
+так
 
 `{ echo "source ~/.bashrc.orig"; echo "source ~/src/bashrc/.bashrc"; } > ~/.bashrc; source ~/.bashrc`
 
