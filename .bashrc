@@ -4,7 +4,7 @@ alias auu='apt update && apt upgrade -y'    # Обновление пакето�
 alias c='clear'                             # Очистить экран
 alias eb='exec bash'                        # Перезагрузка терминала
 alias vb='vim ~/.bashrc'                    # Редактирование bashrc
-alias сзв=cpd='echo 45777777;'
+alias сзв cpd='echo 45777777;'
 
 alias gg='git add '*'; git commit -m "gg-quick"; git push' # Сохранение локальных изменений репо на GitHub 
 alias gc='mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${1}.git' # Клоирование моих репо
