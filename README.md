@@ -4,9 +4,9 @@
 
 `mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git`
 
-2. Переименовываем оригинал .bashrc в .bashrc.orig
+2. Копируем оригинал .bashrc в .bashrc.orig(если он не существует)
 
-`mv ~/.bashrc ~/.bashrc.orig`
+`cp -n ~/.bashrc ~/.bashrc.orig`
 
 3. Создаем ~/.bashrc и вставляем ссылки на ~/src/bashrc/.bashrc и ~/.bashrc.orig
 
