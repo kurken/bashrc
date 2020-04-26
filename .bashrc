@@ -1,5 +1,5 @@
 alias ai='apt install $*'                       # Установка программ
-ali() { if [ 5 == 4 ]; then echo "1111"; else echo "222"; fi } # Список установленных пакетов
+#ali() { if [ 5 == 4 ]; then echo "1111"; else echo "222"; fi } # Список установленных пакетов
 alias alig='apt list --installed | grep $1'    # Список установленных пакетов, отфильтрованных grep
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
@@ -7,7 +7,8 @@ alias c='clear'                                 # Очистить экран
 alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc 
 alias ..='cd ..'                                # Подняться вверх
 alias eb='exec bash'                            # Перезагрузка терминала
-alias vb='vim ~/.bashrc'                        # Редактирование bashrc
+alias vb='vim ~/.bashrc'                        # Основной bashrc
+alias vb='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
 
 alias gg='git add '*'; git commit -m "gg-quick"; git push' # Сохранение локальных изменений репо на GitHub 
 alias gc='mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${1}.git' # Клонирование моих репо                                            
