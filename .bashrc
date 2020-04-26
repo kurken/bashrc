@@ -4,6 +4,7 @@ alias alig='apt list --installed | grep $1'    # Список установле
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
 alias c='clear'                                 # Очистить экран
+alias .='cd ..'                                 # Подняться вверх
 alias eb='exec bash'                            # Перезагрузка терминала
 alias vb='vim ~/.bashrc'                        # Редактирование bashrc
 
