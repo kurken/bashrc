@@ -1,5 +1,5 @@
 alias ai='apt install $*'                       # Установка программ
-ali() { if [ 5 == 4 ]; then echo "1111"; else echo "222"; fi; return; } # Список установленных пакетов
+ali() { if [ 5 == 5 ]; then echo "1111"; else echo "222"; fi; return; } # Список установленных пакетов
 alias alig='apt list --installed | grep $1'    # Список установленных пакетов, отфильтрованных grep
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
