@@ -8,7 +8,7 @@ alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc
 alias ..='cd ..'                                # Подняться вверх
 alias eb='exec bash'                            # Перезагрузка терминала
 alias vb='vim ~/.bashrc'                        # Основной bashrc
-alias vb='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
+alias vbs='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
 
 alias gg='git add '*'; git commit -m "gg-quick"; git push' # Сохранение локальных изменений репо на GitHub 
 alias gc='mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${1}.git' # Клонирование моих репо                                            
