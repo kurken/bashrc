@@ -20,3 +20,5 @@ alias lg='ls -alFt | grep ^$1'                 # Список файлов, вк
 
 # Система
 alias sd='clear; lsblk; df -h; fdisk -l;'          # Информация о дисках и файловой системе
+
+alias vsc='vim ~/.ssh/config'                      # Редактирование config-файла ssh (для настройки подключений)
