@@ -1,7 +1,17 @@
 Установка одной строкой:
 
-`if [ -e ~/src/bashrc/.bashrc ]; then echo "ok"; else mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git; fi; cp -n ~/.bashrc ~/.bashrc.orig; echo -e "source ~/.bashrc.orig\nsource ~/src/bashrc/.bashrc" > ~/.bashrc; source ~/.bashrc`
+`
+if [ -e ~/src/bashrc/.bashrc ]; then echo "ok"; 
+else mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git; fi; 
+cp -n ~/.bashrc ~/.bashrc.orig; 
+echo -e "source ~/src/bashrc/.bashrc\n" > ~/.bashrc;
+if [ -e ~/.bashrc.orig ]; then echo "source ~/.bashrc.orig" >> ~/.bashrc; fi;
+source ~/.bashrc;
+`
 
+
+
+# if [[ ! ( -e ~/.bashrc.orig ) ]]; then echo "source ~/src/bashrc/.bashrc" >> ~/.bashrc; fi;
 
 Пошаговая установка:
 
