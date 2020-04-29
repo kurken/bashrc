@@ -16,8 +16,7 @@ alias eb='exec bash'                            # Перезагрузка те�
 
 alias f='vim $*'
 
-alias kpp='kill $(pgrep $1)'
-      kp() { kill $(pgrep $1); }
+      kp() { kill $(pgrep $1); }                # Завершение процесса(ов) по подстроке
 
 alias vb='vim ~/.bashrc'                        # Основной bashrc
 alias vbs='vim ~/src/bashrc/.bashrc'            # Редактирование bashrc
