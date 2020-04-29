@@ -1,7 +1,7 @@
 alias ai='apt install $*'                       # Установка программ
 ali() { if [ -z $1 ]; then echo "Это 5!"; else echo "Не 5!"; fi; } # Список установленных пакетов
 alias alig='apt list --installed | grep $1'    # Список установленных пакетов, отфильтрованных grep
-      arec() { cd ~/src/arecord && ./arecord.sh && exit; }
+alias arec='~/src/arecord/arecord.sh'
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
 
