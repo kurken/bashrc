@@ -11,8 +11,8 @@ alias vb='vim ~/.bashrc'                        # Основной bashrc
 alias vbs='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
 
 # Git
-alias ggg='git add '*'; git commit -m "ggg-quick"; git push' # Сохранение локальных изменений репо на GitHub
-alias gg='git pull; git add '*'; git commit -m "gg-quick"; git push' # Синхронизация, сохранение локальных изменений репо на GitHub 
+alias ggg='git add .; git commit -m "ggg-quick"; git push' # Сохранение локальных изменений репо на GitHub
+alias gg='git pull; git add .; git commit -m "gg-quick"; git push' # Синхронизация, сохранение локальных изменений репо на GitHub 
 alias gc=' repo="$1" ; mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${repo}.git' # Клонирование моего репо                                            
 alias gp='git pull'                         # Синхронизация локального репо с удаленнным
 
