@@ -6,7 +6,8 @@ alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
 
 alias c='clear'                                 # Очистить экран
-alias ch='chmod -v $1 $2'                       # Смена прав
+alias ch='chmod -v $1 $2'                       # Смена прав (ch 755 file)
+alias chh='chmod -vR $1 $2'                     # Смена прав рекурсивно (chh 755 file)
 
       d() { mkdir -p "$1" && cd "$_"; }         # Создание папки и переход в неё
 
