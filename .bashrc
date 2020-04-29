@@ -30,7 +30,8 @@ alias gpb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt' #
 alias h='history'                               # История ввода команд
 
 alias lg='ls -alFt | grep $1'                 # Список файлов, включая скрытые(-a)+ подробно(-l) + / (-F)
-                                               # + сортировка по времени(-t). Фильтр grep по началу названия.
+                                              # + сортировка по времени(-t). Фильтр grep по началу названия.
+alias p='pgrep $1'                            # Поиск PID процесса
 
 # Система
 alias sd='clear; lsblk; df -h; fdisk -l;'          # Информация о дисках и файловой системе
