@@ -1,6 +1,6 @@
 alias ai='apt install $*'                       # Установка программ
 ali() { if [ -z $1 ]; then echo "Это 5!"; else echo "Не 5!"; fi; } # Список установленных пакетов
-alias alig='apt list --installed | grep $1'    # Список установленных пакетов, отфильтрованных grep
+alias alig='apt list --installed | grep $1'     # Список установленных пакетов, отфильтрованных grep
 alias arec='~/src/arecord/arecord.sh &'
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
@@ -17,7 +17,7 @@ alias eb='exec bash'                            # Перезагрузка те�
 alias f='vim $*'
 
 alias vb='vim ~/.bashrc'                        # Основной bashrc
-alias vbs='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
+alias vbs='vim ~/src/bashrc/.bashrc'            # Редактирование bashrc
 
 # Git
 alias ggg='git add .; git commit -m "ggg-quick"; git push' # Сохранение локальных изменений репо на GitHub
