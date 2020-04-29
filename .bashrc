@@ -14,7 +14,7 @@ alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc
 alias ..='cd ..'                                # Подняться вверх
 alias eb='exec bash'                            # Перезагрузка терминала
 
-alias f='vim $*'
+alias f='vim $*'                                # Создание файла и открытие в vim
 
       kp() { kill $(pgrep $1); }                # Завершение процесса(ов) по подстроке
 
