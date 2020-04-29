@@ -4,9 +4,11 @@ alias alig='apt list --installed | grep $1'    # Список установле
 alias arec='~/src/arecord/arecord.sh &'
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
+
 alias c='clear'                                 # Очистить экран
 alias ch='chmod -v $1 $2'                       # Смена прав
-alias d='mkdir -p $*'
+
+alias d='mkdir -p $* && cd "$_"'                # Создание папки и переход в неё
 
 alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc 
 alias ..='cd ..'                                # Подняться вверх
