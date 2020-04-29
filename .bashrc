@@ -8,8 +8,8 @@ alias auu='apt update && apt upgrade -y'        # Обновление паке�
 alias c='clear'                                 # Очистить экран
 alias ch='chmod -v "$1" "$2"'                       # Смена прав
 
-function ddd() { mkdir -p "$1" && cd "$1"; }
-alias d='mkdir -p $1; cd "$_"'                # Создание папки и переход в неё
+function d() { mkdir -p "$1" && cd "$1"; }     # Создание папки и переход в неё
+#alias d='mkdir -p $1; cd "$_"'                # Создание папки и переход в неё
 alias dd='mkdir -p $1' 
 
 alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc 
