@@ -16,7 +16,7 @@ alias gg='git pull; git add .; git commit -m "gg-quick"; git push' # Синхр�
 alias gc=' repo="$1" ; mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/${repo}.git' # Клонирование моего репо                                            
 alias gp='git pull'                         # Синхронизация локального репо с удаленнным
 
-alias gpb='cd ~/src/bashrc; git pull; source ~/.bashrc' # Синхронизация локального репо bashrc с удаленным
+alias gpb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt' # Синхронизация локального репо bashrc с удаленным
 
 alias h='history'                               # История ввода команд
 
