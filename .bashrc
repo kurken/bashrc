@@ -5,7 +5,9 @@ alias arec='~/src/arecord/arecord.sh &'
 alias as='apt search $1'                        # Поиск программы
 alias auu='apt update && apt upgrade -y'        # Обновление пакетов
 alias c='clear'                                 # Очистить экран
-alias ch='chmod -v $1 $2'
+alias ch='chmod -v $1 $2'                       # Смена прав
+alias d='mkdir -p $*'
+
 alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc 
 alias ..='cd ..'                                # Подняться вверх
 alias eb='exec bash'                            # Перезагрузка терминала
