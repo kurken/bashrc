@@ -9,7 +9,7 @@ alias c='clear'                                 # Очистить экран
 alias ch='chmod -v "$1" "$2"'                       # Смена прав
 
 function d() { mkdir -p "$1" && cd "$1"; }     # Создание папки и переход в неё
-#alias d='mkdir -p $1; cd "$_"'                # Создание папки и переход в неё
+alias ddddd='mkdir -p $1 && "$_"'                # Создание папки и переход в неё
 alias dd='mkdir -p $1' 
 
 alias etc='clear; cd /etc; ls -alFt | grep $1'  # Поиск grep-ом в etc 
