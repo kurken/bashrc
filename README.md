@@ -3,7 +3,7 @@
 `
 if [ -e ~/src/bashrc/.bashrc ]; then echo "ok"; 
 else mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git; fi; 
-cp -n ~/.bashrc ~/.bashrc.orig; 
+if [ -e ~/.bashrc ]; then cp -n ~/.bashrc ~/.bashrc.orig; fi; 
 echo -e "source ~/src/bashrc/.bashrc\n" > ~/.bashrc;
 if [ -e ~/.bashrc.orig ]; then echo "source ~/.bashrc.orig" >> ~/.bashrc; fi;
 source ~/.bashrc;
