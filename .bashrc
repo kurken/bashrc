@@ -1,3 +1,5 @@
+alias 7zi='7z x $1 -o./$1/;'
+
 alias ai='apt install $*'                       # Установка программ
 ali() { if [ -z $1 ]; then echo "Это 5!"; else echo "Не 5!"; fi; } # Список установленных пакетов
 alias alig='apt list --installed | grep $1'     # Список установленных пакетов, отфильтрованных grep
