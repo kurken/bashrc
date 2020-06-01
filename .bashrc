@@ -43,7 +43,7 @@ alias p='pgrep $1'                            # Поиск PID процесса 
 
 # pyenv
 alias pel='pyenv install --list'              # Списов доступных версий python для установки
-alias pel='pyenv install $1 -v; pyenv rehash' # Установка нужной версии и восст. исп. файлов
+alias pil='pyenv install $1 -v; pyenv rehash' # Установка нужной версии и восст. исп. файлов
 alias pve='pyenv versions'                    # Просмотр установленных версий
 
 
