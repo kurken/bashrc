@@ -3,7 +3,7 @@ alias gpb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt'
 
 
 # 7zip
-lias 7zi='7z x $1 -o./$1/;'   # 
+alias 7zi='7z x $1 -o./$1/;'   # 
 
 alias ai='apt install $*'                       # Установка программ
 ali() { if [ -z $1 ]; then echo "Это 5!"; else echo "Не 5!"; fi; } # Список установленных пакетов
