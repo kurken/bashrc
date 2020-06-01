@@ -50,7 +50,7 @@ alias pve='~/.pyenv/bin/pyenv versions'                    # Просмотр у
 
 # python
 alias pe='python3 -m venv env && source ./env/bin/activate' # Создание виртуального окружения+активация
-alias pepa='~/.pyenv/versions/_$1_/bin/python3 -m venv env && source ./env/bin/activate'
+alias pepa='"~/.pyenv/versions/${1}/bin/python3" -m venv env && source ./env/bin/activate'
 
 # Система
 alias sd='clear; lsblk; df -h; fdisk -l;'          # Информация о дисках и файловой системе
