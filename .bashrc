@@ -1,4 +1,4 @@
-# gpb - cинхронизация локального репо bashrc с удаленным
+# bb - cинхронизация локального репо bashrc с удаленным (раньше было gpb)
 alias bb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt'
 alias bbb='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
 alias bbbb='vim ~/.bashrc'                        # Основной bashrc
