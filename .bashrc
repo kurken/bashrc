@@ -1,3 +1,4 @@
+# bashrc : if [ -e ~/src/bashrc/.bashrc ]; then echo "ok"; else mkdir -p ~/src; cd ~/src; git clone https://github.com/kurken/bashrc.git; fi; if [ -e ~/.bashrc ]; then cp -n ~/.bashrc ~/.bashrc.orig; fi; echo -e "source ~/src/bashrc/.bashrc\n" > ~/.bashrc; if [ -e ~/.bashrc.orig ]; then echo "source ~/.bashrc.orig" >> ~/.bashrc; fi; source ~/.bashrc;
 # bb - cинхронизация локального репо bashrc с удаленным (раньше было gpb)
 alias bb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt'
 alias bbb='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
