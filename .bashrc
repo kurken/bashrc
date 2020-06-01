@@ -1,5 +1,7 @@
 # gpb - cинхронизация локального репо bashrc с удаленным
-alias gpb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt' 
+alias bb='pwdt=$(pwd); cd ~/src/bashrc; git pull; source ~/.bashrc; cd $pwdt'
+alias bbb='vim ~/src/bashrc/.bashrc'             # Редактирование bashrc
+alias bbbb='vim ~/.bashrc'                        # Основной bashrc
 
 
 # 7zip
@@ -26,8 +28,6 @@ alias f='vim $*'                                # Создание файла и
 
       kp() { kill $(pgrep $1); }                # Завершение процесса(ов) по подстроке
 
-alias vb='vim ~/.bashrc'                        # Основной bashrc
-alias vbs='vim ~/src/bashrc/.bashrc'            # Редактирование bashrc
 
 # Git
 alias ggg='git add .; git commit -m "ggg-quick"; git push' # Сохранение локальных изменений репо на GitHub
