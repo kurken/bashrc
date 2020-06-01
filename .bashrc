@@ -41,8 +41,7 @@ alias lg='ls -alFt | grep $1'                 # Список файлов, вк�
                                               # + сортировка по времени(-t). Фильтр grep по началу названия.
 alias p='pgrep $1'                            # Поиск PID процесса по подстроке
 
-# pyenv
-# установка git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+# pyenv : git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 alias pel='~/.pyenv/bin/pyenv install --list'              # Списов доступных версий python для установки
 alias pil='~/.pyenv/bin/pyenv install $1 -v; pyenv rehash' # Установка нужной версии и восст. исп. файлов
 alias pve='~/.pyenv/bin/pyenv versions'                    # Просмотр установленных версий
